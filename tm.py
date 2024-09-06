@@ -136,7 +136,7 @@ azure_webapp_azure_waf.responseTo = azure_waf_azure_webapp
 
 azure_webapp_webapp_images = Dataflow(azure_webapp, webapp_images, "HTTP")
 azure_webapp_webapp_images.protocol = "HTTP"
-azure_webapp_webapp_images.isEncrypted = True
+azure_webapp_webapp_images.isEncrypted = False
 webapp_images_azure_webapp = Dataflow(webapp_images, azure_webapp, "")
 webapp_images_azure_webapp.responseTo = azure_webapp_webapp_images
 
